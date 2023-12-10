@@ -23,8 +23,14 @@ public class Boradcontroller {
 
     @Autowired
     private BoardService boardService;
-    @GetMapping("/board/write")
 
+    @GetMapping("/")
+    public String boardMain(){
+        return "main";
+    }
+
+
+    @GetMapping("/board/write")
     public String boardWriteForm() {
 
         return "BoardWrite";
