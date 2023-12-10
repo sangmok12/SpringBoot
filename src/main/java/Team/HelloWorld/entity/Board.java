@@ -23,4 +23,6 @@ public class Board {
 
     private String filepath;
 
+    //깃 테스트
+
 }
