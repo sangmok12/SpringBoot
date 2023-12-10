@@ -2,15 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>메인화면</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Main Screen</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #3498db;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #2c3e50;
+        }
+    </style>
 </head>
 <body>
 
-<a href="/board/write">게시글 작성</a>
+<h1>Welcome to the Awesome Main Screen!</h1>
 
-
-
-
+<a href="/board/write">Create a New Post</a>
+<a href="/board/list">Explore Posts</a>
 
 </body>
 </html>

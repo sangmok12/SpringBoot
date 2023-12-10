@@ -66,7 +66,11 @@ public class Boradcontroller {
 
         //둘 중 큰값이므로 1 아래로 내려가지 않게
         int startPage = Math.max(nowPage - 4,1);
-        int endPage = Math.min(nowPage + 5,list.getTotalPages());
+        int endPage = Math.min(startPage + 8,list.getTotalPages());
+
+        if (endPage - startPage <8) {
+            startPage = Math.max(nowPage - 4 - (8 - (endPage-startPage)),1);
+        }
 
         //boardList에 있는걸 "list"라는 이름으로 전송
         model.addAttribute("list",list);
